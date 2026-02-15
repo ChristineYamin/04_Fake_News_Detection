@@ -13,7 +13,7 @@ st.write("Enter a news article below to check whether it is fake or real.")
 
 # ---------- OPTIONAL: Proper testing using your dataset ----------
 DATA_DIR = Path("data")
-test_path = DATA_DIR / "clean_test.csv"
+test_path = DATA_DIR / "sample_test.csv"
 
 if "sample_text" not in st.session_state:
     st.session_state["sample_text"] = ""
