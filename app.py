@@ -12,8 +12,7 @@ st.title("Fake News Detection App")
 st.write("Enter a news article below to check whether it is fake or real.")
 
 # ---------- OPTIONAL: Proper testing using your dataset ----------
-DATA_DIR = Path("data")
-test_path = DATA_DIR / "sample_test.csv"
+test_path = Path("sample_test.csv")
 
 if "sample_text" not in st.session_state:
     st.session_state["sample_text"] = ""
@@ -33,7 +32,7 @@ if test_path.exists():
             sample = test_df[test_df["label"] == 1].sample(1).iloc[0]
             st.session_state["sample_text"] = sample["combined_text"]
 else:
-    st.info("Tip: Put data/clean_test.csv next to app.py to enable random sample testing.")
+    st.info("Tip: Put sample_test.csv next to app.py to enable random sample testing.")
 
 # Text input
 user_input = st.text_area("Paste article text here:", value=st.session_state["sample_text"], height=200)
