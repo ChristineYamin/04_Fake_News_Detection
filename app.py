@@ -12,7 +12,7 @@ st.title("Fake News Detection App")
 st.write("Enter a news article below to check whether it is fake or real.")
 
 # ---------- OPTIONAL: Proper testing using your dataset ----------
-test_path = Path("sample_test.csv")
+test_path = Path("clean_test.csv")
 
 if "sample_text" not in st.session_state:
     st.session_state["sample_text"] = ""
