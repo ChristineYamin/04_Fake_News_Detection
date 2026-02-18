@@ -77,4 +77,4 @@ App.py for streamlit
 The logistic regression model achieves 95 percentage accuracy and the support vector machine(SVM) achieve 96 percentage accuracy.
 
 ## Live Demo ( Streamlit app)
-https://sentiment-analysis-movie-reviews-swna7sktweepojrv6xm6uy.streamlit.app/
+https://04fakenewsdetection-irum2creqboqlvupcfuxhc.streamlit.app/
